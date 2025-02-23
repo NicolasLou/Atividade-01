@@ -1,0 +1,29 @@
+<!-- views/packageDetails.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Pacote - Pacote para a Europa</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="detalhes-pacote">
+        <h1>Pacote para a Europa</h1>
+        <p><strong>Destino:</strong> Europa</p>
+        <p><strong>Descrição:</strong> Uma viagem incrível pela Europa, visitando diversos países e cidades.</p>
+        <p><strong>Data de Partida:</strong> 15 de Junho de 2025</p>
+        <p><strong>Duração:</strong> 15 dias</p>
+        <p><strong>Preço:</strong> R$ 5000,00</p>
+        <p><strong>Lugares Disponíveis:</strong> 50 lugares</p>
+
+        <!-- Campo para selecionar a quantidade de lugares -->
+        <label for="quantidade">Quantidade de Lugares:</label>
+        <input type="number" id="quantidade" name="quantidade" min="1" max="50" value="1" onchange="calcularTotal()">
+
+        <p id="total">Valor Total: R$ 5000,00</p>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

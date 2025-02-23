@@ -1,0 +1,69 @@
+/* public/css/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.pacotes {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.pacote {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.pacote h2 {
+    font-size: 1.5rem;
+}
+
+.pacote p {
+    margin: 5px 0;
+}
+
+.detalles-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.detalles-btn:hover {
+    background-color: #45a049;
+}
+
+.detalles-pacote {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    margin-top: 10px;
+    padding: 5px;
+}
+
+#total {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: green;
+}

@@ -1,0 +1,50 @@
+<!-- views/index.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial - Pacotes de Viagem</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pacotes de Viagem Disponíveis</h1>
+
+        <!-- Verifica se o usuário está autenticado -->
+        <div class="auth-links">
+            <% if (authenticated) { %>
+                <a href="/logout">Logout</a>
+            <% } else { %>
+                <a href="/login">Login</a>
+            <% } %>
+        </div>
+    </header>
+
+    <section class="pacotes">
+        <div class="pacote">
+            <h2>Pacote Europa</h2>
+            <p>Data de partida: 15 de Junho de 2025</p>
+            <p>Destino: Europa</p>
+            <p>Preço: R$ 5000,00</p>
+            <a href="/package/1" class="detalhes-btn">Ver Detalhes</a>
+        </div>
+        <div class="pacote">
+            <h2>Pacote Estados Unidos</h2>
+            <p>Data de partida: 10 de Julho de 2025</p>
+            <p>Destino: Estados Unidos</p>
+            <p>Preço: R$ 4000,00</p>
+            <a href="/package/2" class="detalhes-btn">Ver Detalhes</a>
+        </div>
+        <div class="pacote">
+            <h2>Pacote Japão</h2>
+            <p>Data de partida: 20 de Agosto de 2025</p>
+            <p>Destino: Japão</p>
+            <p>Preço: R$ 6000,00</p>
+            <a href="/package/3" class="detalhes-btn">Ver Detalhes</a>
+        </div>
+    </section>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
